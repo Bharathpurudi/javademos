@@ -1,0 +1,112 @@
+\\172.16.1.59\Training
+
+To check weather the network folder is conected or not
+we can ping in commond prompt using the ip address of the network
+
+win+r
+cmd
+//sourcedrive/ping ipaddress
+C:training/ping 172.168.1.1
+
+DAY-1 AGENDA
+
+JAVA --> JEE --> FRAMEWORK --> SPRING --> SPRING BOOT
+
+DATABASE
+	Open Database --> My SQL (Free/opensource)
+
+SUN TECHNOLOGIES (James Gosling)--> Oracle
+	1. JSE --> Java Standard Edition (Core Java)
+	2. JEE --> Java Enterprise Edition ( Advance Java)
+	3. J2ME --> Java Micro Edition (Mobile) 
+	4. JFX 
+
+JDK 17 is the latest version released on Sep 14 2021
+	--> JDK stands for Java Devolopment Kit
+
+For training purpose we are using JDK 1.8 which is free ware version
+
+Installing JDK
+	JDK
+	JRE (Java Run time Environment)
+To run java in the computer we need the java runtime environment
+
+-->HLL High level language (Human)
+	Translator
+		1. Compiler
+			Execute the entire code and translate
+		2. Interpretor
+			Line by line translate
+-->LLL Low level language
+
+JSE 
+	Translator (Interpreter(command java) + Compiler (command javac))
+
+To check the version of JSE installed in the system
+Step1 : win+r
+	cmd
+Step2 : java -version
+	javac -version
+
+	If JDK is not installed, install the JDK (C:\Program Files\Java --> default location)
+Step3: Configure in environment variable
+	Edit system variables
+	Advanced
+	Environment Variables
+	Path --> Edit
+	1) path = location of jdk\bin (ex: C:\Program Files\Java\bin) Need to move up to give the priority to java. 
+								      This will be acheived my pressing Home key on 
+								      keyboard and need to paste the path. 
+	2)JAVA_HOME = location of jdk 
+	New --> Variable name: JAVA_HOME
+		Path: C:\Program Files\Java
+Step4: Software
+	1> To work with the java we need a text editor (Notepad)
+	2> CLI (Command Line Interface)
+
+	--> Once the code is written, need to save it with the name which is same name of the class that written in the code 
+	with the extension .java in the desired folder.
+	--> Then type cmd in the desired folder path bar which will redirect to the command prompt with the desired path
+	As we know first we need to compile the java file
+	In command prompt type javac <filename with the extension> then press enter
+	Java compiler compiles the java file and creates the Java class file which we call it as a java byte code which
+	will be furter interpreted by java interpreter
+	Type java <filename without extension>
+	Then the desired output can be seen in the command Prompt 
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Hello world Program
+
+public class HelloWorld{
+	public static void main(String args[]){
+		System.out.println("Hello World")
+	}
+}
+
+// public is a access modifier. Which will give the access to the class. Public, Private, Protected are the access modifiers
+// class is a keyword to define the class HelloWorld
+// HelloWorld is the class name. The same name should be given to the file with the extension of .java
+// main() is the method from which the the methods of the class will be called. Its like a door to enter into the class
+// System.out.println command will print the "Hello World" string in the console
